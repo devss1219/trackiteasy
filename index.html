@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>syllabus tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Track it easy...</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a topic...">
+            <button onclick="searchTopic()">Search</button>
+        </div>
+
+        <div id="syllabusContainer"></div>
+
+        <div class="input-section">
+            <div class="subject-input">
+                <input type="text" id="subjectName" placeholder="Enter subject name">
+                <button id="addSubjectBtn">Add Subject</button>
+            </div>
+
+            <div class="module-input" id="moduleInput" style="display:none;">
+                <input type="text" id="moduleName" placeholder="Enter module/unit number">
+                <textarea id="moduleContents" placeholder="Enter contents (separated by full stops)"></textarea>
+                <button id="addModuleBtn">Add Module</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
