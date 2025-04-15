@@ -255,3 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return data ? JSON.parse(data) : [];
     }
 });
+function toggleHelpModal() {
+    const modal = document.getElementById("helpModal");
+    modal.style.display = (modal.style.display === "flex") ? "none" : "flex";
+}
