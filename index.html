@@ -33,6 +33,21 @@
             </div>
         </div>
     </div>
+<!-- Help Button -->
+<button class="help-btn" onclick="toggleHelpModal()">?</button>
+
+<!-- Help Modal -->
+<div id="helpModal" class="help-modal">
+    <div class="help-content">
+        <span class="close-btn" onclick="toggleHelpModal()">&times;</span>
+        <h3>Need Help?</h3>
+        <video controls width="100%" height="auto">
+            <source src="help.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
 
     <script src="script.js"></script>
 </body>
